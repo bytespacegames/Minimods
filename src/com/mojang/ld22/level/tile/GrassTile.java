@@ -50,6 +50,8 @@ public class GrassTile extends Tile {
 
 	/** Update method, updates (ticks) every 60 seconds. */
 	public void tick(Level level, int xt, int yt) {
+		if (random.nextInt(40) != 0) return;
+		
 		int xn = xt; // next x position
 		int yn = yt; // next y position
 
